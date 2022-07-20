@@ -9,14 +9,10 @@ import UIKit
 import Moya
 import RxSwift
 
-//TODO:
-//1: Move in PodcastsCollectionVM
-//2: Replace Podcast with PodcastItemProtocol
 
 final class PodcastsCollectionViewController: UICollectionViewController {
     
     // MARK: - Properties
-    //    private var sections = PodcastCollectionISections.podcasts(nil)
     private lazy var dataSource = makeDataSource()
     private lazy var searchController = UISearchController(searchResultsController: nil)
     

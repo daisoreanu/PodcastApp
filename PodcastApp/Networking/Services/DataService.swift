@@ -60,14 +60,5 @@ extension DataService {
     }
 }
 
-//TODO: Should it be implemented?
-public enum APIError: Error {
-    case noResponse
-    case parsing(Error)
-    case networkFailure(NetworkError)
-    case resolvedNetworkFailure(Error)
-}
-
-
 
 

@@ -8,15 +8,6 @@
 import Foundation
 import Moya
 
-//TODO: Should I handle the network errors?
-public enum NetworkError: Error {
-    case error(statusCode: Int, data: Data?)
-    case notConnected
-    case cancelled
-    case generic(Error)
-    case urlGeneration
-}
-
 public extension APIRouter {
     enum PodcastEndpoints: TargetTypeExtension {
         
